@@ -1,0 +1,54 @@
+ Columns . . . :    1  71            Edit                    JBLTD101/QRPGLESRC 
+ SEU==>                                                              ARAYSALARY 
+ FMT D  .....DName+++++++++++ETDsFrom+++To/L+++IDc.Keywords++++++++++++++++++++ 
+*************** Beginning of data ************************************* 
+0001.01      DDAY              S              3    DIM(7)  CTDATA  PERRCD(3)    
+0001.03      DMONTH            S              3    DIM(12) CTDATA  PERRCD(2)    
+0001.04      DSALARY           S              5  0 DIM(12) CTDATA  PERRCD(1)    
+0001.05      DBONUS            S              3  0 DIM(12) CTDATA  PERRCD(1)    
+0001.06      DPAY              S              6  0 DIM(12)                      
+0002.00      C*                                                                 
+0002.22      C                   DO        12            I                 2 0  
+0002.23      C     SALARY(I)     ADD       BONUS(I)      PAY(I)                 
+0002.24      C     MONTH(I)      DSPLY                                          
+0002.25      C     PAY(I)        DSPLY                                          
+0002.26      C                   ENDDO                                          
+0002.27      C                   XFOOT     PAY           DPAY             10 0  
+0002.28      C     DPAY          DSPLY                                          
+0012.00      C                   SETON                                        LR
+0013.00 ** CTDATA DAY                                                           
+0014.00 SUNMONTUE                                                               
+0014.01 WEDTHUFRI                                                               
+0014.02 SAT                                                                     
+0015.00 ** CTDATA MONTH                                                         
+0016.00 JANFEB                                                                  
+0017.00 MARAPR                                                                  
+0018.00 MAIJUN                                                                  
+0019.00 JULAUG                                                                  
+0020.00 SEPOCT                                                                  
+0021.00 NOVDEC                                                                        
+0022.00 ** CTDATA SALARY                                                        
+0023.00 00100                                                                   
+0024.00 00200                                                                   
+0025.00 00200                                                                   
+0026.00 00200                                                                   
+0027.00 00200                                                                   
+0028.00 00300                                                                   
+0029.00 00300                                                                   
+0030.00 00300                                                                   
+0031.00 00300               
+0032.00 00300               
+0033.00 00300               
+0034.00 ** CTDATA BONUS     
+0035.00 000                 
+0036.00 000                 
+0037.00 150                 
+0038.00 000                 
+0039.00 000                                
+0040.00 300                                                                    
+0041.00 300                                                                    
+0042.00 030                                                                    
+0043.00 000                                                                    
+0044.00 002                                                                    
+0045.00 011                                                                    
+        ****************** End of data ****************************************                                                                      
